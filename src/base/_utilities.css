@@ -1,0 +1,86 @@
+.primary {
+  --text-c: var(--primary);
+  --btn-bg: var(--primary);
+  --tag-bg: var(--primary);
+  --accent-bg: var(--primary);
+}
+
+.secondary {
+  --text-c: var(--secondary);
+  --btn-bg: var(--secondary);
+  --tag-bg: var(--secondary);
+  --accent-bg: var(--secondary);
+}
+
+.green {
+  --text-c: var(--green);
+  --btn-bg: var(--green);
+  --tag-bg: var(--green);
+  --accent-bg: var(--green);
+}
+
+.blue {
+  --text-c: var(--blue);
+  --btn-bg: var(--blue);
+  --tag-bg: var(--blue);
+  --accent-bg: var(--blue);
+}
+
+.orange {
+  --text-c: var(--orange);
+  --btn-bg: var(--orange);
+  --tag-bg: var(--orange);
+  --accent-bg: var(--orange);
+}
+
+.red {
+  --text-c: var(--red);
+  --btn-bg: var(--red);
+  --tag-bg: var(--red);
+  --accent-bg: var(--red);
+}
+
+.white {
+  --text-c: var(--white);
+  --btn-bg: var(--white);
+  --btn-c: var(--text-main);
+  --tag-bg: var(--white);
+  --tag-c: var(--text-main);
+  --accent-bg: var(--white);
+}
+
+.grey {
+  --text-c: var(--grey);
+  --btn-bg: var(--grey);
+  --btn-c: var(--text-main);
+  --tag-bg: var(--grey);
+  --tag-c: var(--text-main);
+  --accent-bg: var(--grey);
+}
+
+.black {
+  --text-c: var(--black);
+  --btn-bg: var(--black);
+  --tag-bg: var(--black);
+  --accent-bg: var(--black);
+}
+
+.accent {
+  color: var(--accent-c, var(--text-main));
+  background-color: var(--accent-bg, var(--white));
+  border: var(--accent-border, 0);
+  border-radius: var(--border-radius, 0);
+  box-shadow: var(--accent-shadow, none);
+  overflow: hidden;
+
+  &.primary,
+  &.secondary,
+  &.green,
+  &.blue,
+  &.red,
+  &.orange,
+  &.black {
+    --accent-c: var(--white);
+    --text-c: var(--white);
+  }
+}

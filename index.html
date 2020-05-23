@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>bonsai.css</title>
+    <link id='stylesheet' rel='stylesheet' href='dist/bonsai.min.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='manifest' href='icons/manifest.json' />
+    <link rel='shortcut icon' href='icons/favicon.ico' />
+    <meta name='apple-mobile-web-app-title' content='bonsai.css' />
+    <meta name='application-name' content='bonsai.css' />
+    <meta name='msapplication-config' content='icons/browserconfig.xml' />
+    <meta name='theme-color' content='#ffffff' />
+    <meta name="description" content="Largely classless, blazing fast and super light-weight. Bonsai, a CSS framework for modern browsers.">
+
+    <style>
+    section {
+      margin: 2em 0 4em;
+    }
+    .grid-demo {
+      grid-auto-rows: minmax(50px, auto);
+    }
+    .grid-demo > * {
+      background: #4a69bd;
+      min-height: 3rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .grid-demo > *:nth-child(even) {
+      background: #3f5aa4;
+    }
+    </style>
+
+  </head>
+
+  <body style="--maxw:1000px; --m:20px auto; --p:0 3vw; --bg:#f5f5f5; --c:#202020;">
+    <img src="logo.png" alt="bonsai" style="margin:40px auto 0; --d:block;">
+    <h1 style="text-align: center;">bonsai.css</h1>
+    <p style="text-align: center; max-width: 450px; margin: auto">All the versatility with none of the weight</p>
+    <br><br>
+ 
+    <section>
+      <h3 class="primary">Block and Inline Elements</h3>
+      <p class="green">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+      </p>
+      <p>
+        Sed egestas, ante et <a href="#">vulputate volutpat</a>, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. <i>Sed semper lorem at felis.</i> Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. <b>Phasellus pede</b> arcu, dapibus eu, fermentum et, dapibus sed, urna. Morbi interdum mollis sapien. Sed ac risus. <small>Phasellus lacinia, magna a ullamcorper laoreet</small>, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. <code>Suspendisse ac urna.</code> Etiam pellentesque mauris ut lectus. <mark>Nunc tellus ante</mark>, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
+      </p>
+      <blockquote>
+        <p>
+          Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique.
+        </p>
+        <footer>—Parmenides, <cite>Nunc sem lacus, accumsan quis</cite></footer>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3 class="primary">Headings</h3>
+      <h1>Heading Level 1</h1>
+      <h2>Heading Level 2</h2>
+      <h3>Heading Level 3</h3>
+      <h4>Heading Level 4</h4>
+      <h5>Heading Level 5</h5>
+      <h6>Heading Level 6</h6>
+    </section>
+
+    <section>
+      <h3 class="primary">Lists</h3>
+      <div class="grid" style="--col:2">
+        <ul>
+          <li>Unordered list item 1</li>
+          <li>
+            Unordered list item 2
+            <ul>
+              <li>Unordered list sub-item 1</li>
+              <li>Unordered list sub-item 2</li>
+            </ul>
+          </li>
+          <li>Unordered list item 3</li>
+          <li>Unordered list item 4</li>
+        </ul>
+        <ol>
+          <li>Ordered list item 1</li>
+          <li>
+            Ordered list item 2
+            <ol>
+              <li>Ordered list sub-item 1</li>
+              <li>Ordered list sub-item 2</li>
+            </ol>
+          </li>
+          <li>Ordered list item 3</li>
+          <li>Ordered list item 4</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="primary">Layout</h3>
+      <p>Bonsai.css  a multi dimensional, easy to use layout framework. </p>
+      <div class="grid grid-demo" style="--col-xs:2; --col-sm:6; --gap:1rem;">
+        <div style="--sc-sm:2; --sr-sm:2">--sc-sm:2; --sr-sm:2</div>
+        <div style="--sr-sm:3">--sr-sm:3</div>
+        <div style="--sr-sm:4">--sr-sm:4</div>
+        <div style="--sr-sm:5">--sr-sm:5</div>
+        <div style="--sr-sm:6">--sr-sm:6</div>
+        <div style="--sc-sm:2">--sc-sm:2</div>
+        <div style="--sc-sm:3">--sc-sm:3</div>
+        <div style="--sr-sm:6">--sr-sm:6</div>
+        <div style="--sc-sm:3">--sc-sm:3</div>
+        <div style="--sr-sm:5">--sr-sm:5</div>
+        <div style="--sc-sm:3">--sc-sm:3</div>
+        <div style="--sr-sm:4">--sr-sm:4</div>
+        <div style="--sc-sm:3">--sc-sm:3</div>
+        <div style="--sr-sm:3">--sr-sm:3</div>
+        <div style="--sc-sm:2">--sc-sm:2</div>
+        <div style="--sc-sm:2; --sr-sm:2">--sc-sm:2; --sr-sm:2</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="primary">Inputs &amp; Textareas</h3>
+      <div class="grid" style="--col: 2">
+        <p>
+          <label>First Name
+            <input type="text" placeholder="John">
+          </label>
+        </p>
+        <p>
+          <label>Last Name        
+            <input type="text" placeholder="Dow">
+          </label>
+        </p>
+      </div>
+      <div class="grid" style="--col:3">
+        <p>
+          <label for="input-date">Input with type="date"
+            <input type="date" id="input-date">
+          </label>
+        </p>
+        <p>
+          <label for="input-time">Input with type="time"
+            <input type="time" id="input-time">
+          </label>
+        </p>
+        <p>
+          <label>Type
+            <select name="type">
+              <option value="message">Message</option>
+              <option value="feature">Feature</option>
+              <option value="report">Report</option>
+            </select>
+          </label>
+        </p>
+      </div>
+      <div class="row">
+        <p class="col">
+          <label>Message
+            <textarea placeholder="Greetings..."></textarea>
+          </label>
+        </p>
+      </div>
+      <h4 class="primary">Input States</h4>
+      <form class="flex">
+        <p>
+          <label for="input-text-standard">Standard
+            <input type="text">
+          </label>
+        </p>
+        <p>
+          <label for="input-text-disabled">Disabled
+            <input type="text" disabled="">
+          </label>
+        </p>
+        <p>
+          <label for="input-text-invalid">Invalid        
+            <input type="email" required="" value="ciar4n">
+          </label>
+        </p>
+        <p>
+          <label for="input-text-readonly">Read Only
+            <input type="text" readonly="">
+          </label>
+        </p>
+      </form>
+    </section>
+  
+    <section>
+      <h3 class="primary">Buttons</h3>
+
+      <p>
+        <span>Button with button tag</span><br>
+        <button >Button</button>
+        <button aria-label="add">
+          <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+          Button
+        </button>
+        <button disabled="">Button Disabled</button>
+      </p>
+
+      <p>
+        <span>Button Color Variations</span><br>
+        <button class="green">Green</button>
+        <button class="orange">Orange</button>
+        <button class="red">Red</button>
+        <button class="white">White</button>
+        <button class="grey">Grey</button>
+        <button class="black">Black</button>
+      </p>
+
+      <p>
+        <span>Button Groups (Horizontal)</span><br>
+          <span class="group">
+            <button>Button</button>
+            <button>Button</button>
+            <button>Button</button>
+          </span>
+          <span class="group">
+            <input type="text" placeholder="John" aria-label="Name">
+            <button>Button</button>
+            <button>Button</button>
+          </span>
+          <span class="group">
+            <button>Button</button>
+            <input type="text" placeholder="John" aria-label="Name">
+          </span>
+          <span class="group">
+            <button aria-label="upload">
+              <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-download fa-w-18" style="transform-origin: 0.5625em 0.4375em 0px;"><g transform="translate(288 256)" class=""><g transform="translate(0, -32)  scale(1, 1)  rotate(0 0 0)" class=""><path fill="currentColor" d="M528 288h-92.1l46.1-46.1c30.1-30.1 8.8-81.9-33.9-81.9h-64V48c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v112h-64c-42.6 0-64.2 51.7-33.9 81.9l46.1 46.1H48c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V336c0-26.5-21.5-48-48-48zm-400-80h112V48h96v160h112L288 368 128 208zm400 256H48V336h140.1l65.9 65.9c18.8 18.8 49.1 18.7 67.9 0l65.9-65.9H528v128zm-88-64c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24z" transform="translate(-288 -256)" class=""></path></g></g></svg>
+            </button>
+            <input type="text" placeholder="filename.txt" aria-label="Filename">
+          </span>
+          <span class="group">
+            <input type="text" placeholder="Name" aria-label="Name">
+            <button>Submit</button>
+          </span>
+      </p>
+
+      <p>
+        <span>Button Groups (Vertical)</span><br>
+          <span class="group vertical">
+            <button>Button</button>
+            <button>Button</button>
+            <button>Button</button>
+            <button>Button</button>
+          </span>
+          <span class="group vertical">
+            <button class="white">Button</button>
+            <button class="grey">Button</button>
+            <button class="green">Button</button>
+          </span>
+          <span class="group vertical">
+            <input type="text" placeholder="Name" aria-label="Name">
+            <button>Button</button>
+          </span>
+          <span class="group vertical">
+            <button>Button</button>
+            <input type="number" placeholder="Quantity" aria-label="Quantity">
+          </span>
+      </p>
+    </section>
+
+    <section>
+      <h3 class="primary">Radios &amp; Checkboxes</h3>
+      <p>
+        <input type="radio" name="radio" id="radio-1" checked="">
+        <label for="radio-1">Radio 1</label><br>
+        <input type="radio" name="radio" id="radio-2">
+        <label for="radio-2">Radio 2</label><br>
+        <input type="radio" name="radio" id="radio-3">
+        <label for="radio-3">Radio 3</label><br>
+        <input type="radio" name="radio" id="radio-4" disabled="">
+        <label for="radio-4">Radio 4 (disabled)</label>
+      </p>
+      <p>
+        <input type="checkbox" id="checkbox-1"> <label for="checkbox-1">Checkbox</label><br>
+        <input type="checkbox" id="checkbox-2" checked="">
+        <label for="checkbox-2">Checked Checkbox</label><br>
+        <input type="checkbox" id="checkbox-3" disabled="">
+        <label for="checkbox-3">Disabled Checkbox</label>
+      </p>
+    </section>
+
+    <section>
+      <h3 class="primary">Other Form Elements</h3>
+      <fieldset>
+        <legend>Fieldset</legend>
+        <div class="grid" style="--col: 2">
+          <p>
+            <label>Username
+              <input type="text" placeholder="John">
+            </label>
+          </p>
+          <p>
+            <label>Password
+              <input type="password" placeholder="Dow">
+            </label>
+          </p>
+        </div>
+        <button>Submit</button>
+      </fieldset>
+      <div class="grid" style="--col:2">
+        <div>
+          <p>
+            <label for="select">Select
+              <select id="select">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <optgroup label="Subgroup">
+                  <option value="4">Option 4</option>
+                  <option value="5">Option 5</option>
+                </optgroup>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label for="input-file">Input File
+              <input type="file">
+            </label>
+          </p>
+          <p>
+            <label for="input-color">Input Color
+              <input type="color" value="#4a69bd">
+            </label>
+          </p>
+        </div>
+        <div>
+          <p>
+            <label for="selectmultiple">Multiselect
+              <select id="selectmultiple" multiple="">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+                <option value="5">Option 5</option>
+                <option value="6">Option 6</option>
+                <optgroup label="Subgroup">
+                  <option value="7">Option 7</option>
+                  <option value="8">Option 8</option>
+                </optgroup>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label for="input-range">Input Range
+              <input type="range">
+            </label>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="primary">Tags</h3>
+
+        <p>
+          <span>Tag Variations</span><br>
+          <div class="tag white">white</div>
+          <div class="tag green">green</div>
+          <div class="tag blue">blue</div>
+          <div class="tag orange">orange</div>
+          <div class="tag red">red</div>
+          <div class="tag grey">grey</div>
+          <div class="tag black">black</div>
+        </p>
+      
+      <p>
+        <span>Tag Groups (Horizontal)</span><br>
+        <span class="group">
+          <span class="tag black">node.js</span>
+          <span class="tag primary">12.16.1</span>
+        </span>
+        <span class="group">
+          <span class="tag black">npm</span>
+          <span class="tag green">6.14</span>
+        </span>
+        <span class="group">
+          <span class="tag black">git</span>
+          <span class="tag white">2.25.1</span>
+        </span>
+        <span class="group">
+          <span class="tag black">node.js</span>
+          <span class="tag orange">12.16.1</span>
+        </span>
+      </p>
+
+      <p>
+        <span>Tag Groups (Vertical)</span><br>
+        <span class="group vertical">
+          <span class="tag black">node.js</span>
+          <span class="tag primary">12.16.1</span>
+        </span>
+        <span class="group vertical">
+          <span class="tag black">npm</span>
+          <span class="tag green">6.14</span>
+        </span>
+        <span class="group vertical">
+          <span class="tag black">git</span>
+          <span class="tag white">2.25.1</span>
+        </span>
+        <span class="group vertical">
+          <span class="tag black">node.js</span>
+          <span class="tag orange">12.16.1</span>
+        </span>
+      </p>
+    </section>
+
+    <section class="section">
+      <h3 class="primary">Table</h3>
+      <table class="accent">
+        <thead>
+          <tr>
+            <th scope="row">Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Row 1 Value 1</th>
+            <td>Row 1 Value 2</td>
+            <td>Row 1 Value 3</td>
+            <td>Row 1 Value 4</td>
+          </tr>
+          <tr>
+            <th scope="row">Row 2 Value 1</th>
+            <td>Row 2 Value 2</td>
+            <td>Row 2 Value 3</td>
+            <td>Row 2 Value 4</td>
+          </tr>
+          <tr>
+            <th scope="row">Row 3 Value 1</th>
+            <td>Row 3 Value 2</td>
+            <td>Row 3 Value 3</td>
+            <td>Row 3 Value 4</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">Total 1</th>
+            <th>Total 2</th>
+            <th>Total 3</th>
+            <th>Total 4</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h3 class="primary">Horizontal Rule</h3>
+      <hr>
+    </section>
+
+    <section>
+      <h3 class="primary">Figure &amp; Figcaption</h3>
+      <figure>
+        <img src="https://source.unsplash.com/BUMBTtu09sA/500x300" alt="Aliquam erat volutpat">
+        <figcaption>Aliquam erat volutpat</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h3 class="primary">Details</h3>
+      <details>
+        <summary>Details/Summary example</summary>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat velit
+          lorem, feugiat congue lacus laoreet quis. Praesent maximus ex nec justo iaculis, in
+          euismod eros dictum. Cras ac lorem sit amet purus malesuada blandit. Mauris gravida
+          augue non urna sodales porttitor. Etiam ullamcorper luctus ullamcorper. In lobortis
+          consequat ante.
+        </p>
+      </details>
+    </section>
+
+    <section>
+      <h3 class="primary">Definition Lists</h3>
+      <dl>
+        <dt>Term 1</dt>
+        <dd>Definition for term 1.</dd>
+
+        <dt>Term 2</dt>
+        <dd>Definition for term 2.</dd>
+
+        <dt>Term 3</dt>
+        <dd>Definition for term 3.</dd>
+      </dl>
+    </section>
+  </body>
+</html>

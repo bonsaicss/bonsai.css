@@ -1,0 +1,38 @@
+@define-mixin svar $prop, $var {
+  [style*="$(var):"] {
+    $(prop): var($(var)) !important;
+  }
+}
+
+@define-mixin svar-mq $prop, $var {
+  [style*="$(var):"] {
+    $(prop): var($(var)) !important;
+  }
+  @media only screen and (min-width:640px) {
+    [style*="$(var)-sm:"] {
+      $(prop): var($(var)-sm) !important;
+    }
+  }
+  @media only screen and (min-width:768px) {
+    [style*="$(var)-md:"] {
+      $(prop): var($(var)-md) !important;
+    }
+  }
+  @media only screen and (min-width:1024px) {
+    [style*="$(var)-lg:"] {
+      $(prop): var($(var)-lg) !important;
+    }
+  }
+  @media only screen and (min-width:1280px) {
+    [style*="$(var)-xl:"] {
+      $(prop): var($(var)-xl) !important;
+    }
+  }
+}
+
+@define-mixin svar:hover $prop, $var {
+  [style*="$(var):"]:hover {
+    $(prop): var($(var), var(--$(prop)));
+  }
+}
+  

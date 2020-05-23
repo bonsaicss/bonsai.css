@@ -1,0 +1,42 @@
+{
+  "name": "bonsai.css",
+  "version": "0.0.1",
+  "description": "Largely classless, blazing fast and super light-weight. Bedrock, a base CSS framework for modern browsers",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciar4n/bonsai.css.git"
+  },
+  "keywords": [
+    "css",
+    "css-framework"
+  ],
+  "author": "ciar4n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ciar4n/bonsai.css/issues"
+  },
+  "homepage": "https://github.com/ciar4n/bonsai.css",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.0",
+    "gulp-bytediff": "^1.0.0",
+    "gulp-filter": "^5.1.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sizereport": "^1.2.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-inline-svg": "^3.1.1",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nested": "^4.2.1",
+    "postcss-nesting": "^7.0.1"
+  },
+  "files": [
+    "dist"
+  ]
+}

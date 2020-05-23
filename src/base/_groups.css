@@ -1,0 +1,41 @@
+.group {
+  display: inline-flex;
+  justify-self: flex-start;
+  margin: .5rem 1rem .5rem 0;
+}
+
+.group > * {
+  margin: 0;
+}
+
+.group:not(.vertical) > * + * {
+  margin-inline-start: -1px;
+}
+
+.group:not(.vertical) > *:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.group:not(.vertical) > *:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.group.vertical {
+  flex-direction: column;
+}
+
+.group.vertical > * + * {
+  margin-top: -1px;
+}
+
+.group.vertical > *:not(:last-child) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.group.vertical > *:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

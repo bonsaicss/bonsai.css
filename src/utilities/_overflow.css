@@ -1,0 +1,3 @@
+@mixin svar overflow, --of;
+@mixin svar overflow-x, --ofx;
+@mixin svar overflow-y, --ofy;

@@ -1,0 +1,212 @@
+button,
+input,
+textarea {
+  transition: background-color var(--animation-duration) linear,
+    border-color var(--animation-duration) linear,
+    color var(--animation-duration) linear,
+    transform var(--animation-duration) ease;
+}
+
+button,
+select,
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="range"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select,
+details > summary,
+.tag {
+  color: var(--form-text);
+  background-color: var(--background);
+
+  font-family: inherit;
+  font-size: inherit;
+  white-space: nowrap;
+
+  position: relative;
+  margin: .5rem .5rem .5rem 0;
+  padding: 10px 12px;
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  outline: none;
+
+  -webkit-appearance: none;
+}
+
+textarea {
+  margin-right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+select {
+  background: var(--background) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
+  padding-right: 35px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select[multiple] {
+  padding-right: 10px;
+  background-image: none;
+  overflow-y: auto;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  padding-right: 28px;
+  padding-left: 28px;
+  width: auto;
+
+  background-color: var(--btn-bg, var(--primary));
+  color: var(--btn-c, var(--white));
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.25);
+}
+
+input:not([readonly]):hover,
+select:not([readonly]):hover,
+textarea:not([readonly]):hover {
+  border-color: rgba(100, 100, 100, .75);
+}
+
+input[type='checkbox']:active,
+input[type='radio']:active,
+input[type='submit']:active,
+input[type='button']:active,
+input[type='range']:active,
+button:active {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--focus);
+}
+
+input:invalid,
+select:invalid,
+button:invalid,
+textarea:invalid {
+  border-color: var(--red);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: relative;
+  width: 20px;
+  min-width: auto;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1px;
+  margin: 0;
+  margin-right: 2px;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4), inset 0 0 0 4px #fff;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background: var(--primary);
+
+}
+
+input[type="checkbox"]:checked::before {
+  display: flex;
+  justify-content: center;
+
+  content: "✔";
+
+  color: white;
+  font-size: .8rem;
+}
+
+input[type="range"] {
+  padding: 0;
+}
+
+input[type="color"] {
+  padding: 2px;
+  width: 5rem;
+  height: 2.5rem;
+}
+
+input:disabled,
+select:disabled,
+button:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+::placeholder {
+  color: var(--form-placeholder);
+}
+
+legend {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+fieldset {
+  border: 1px var(--border) solid;
+  border-radius: var(--border-radius);
+  margin: 0;
+  margin-bottom: .5rem;
+  padding: .75rem 1.5rem;
+}
+
+fieldset > legend:first-of-type {
+  padding: 0 .5rem;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.tag {
+  align-items: center;
+  display: inline-flex;
+
+  font-size: .8rem;
+  color: var(--tag-c, var(--white));
+  background-color: var(--tag-bg, var(--primary));
+
+  width: auto;
+  height: 2em;
+  justify-content: center;
+  padding: 0 .75em 2px;
+
+  border: 0;
+  box-shadow: none;
+}

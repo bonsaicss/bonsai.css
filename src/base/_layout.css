@@ -1,0 +1,61 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--col, 1), 1fr);
+  grid-gap: var(--gap, 1rem);
+}
+
+@media only screen and (min-width:440px) {
+  .grid[style*="--col-xs:"] {
+    grid-template-columns: repeat(var(--col-xs, 1), 1fr);
+  }
+
+  .grid > [style*="--sc-xs:"] {
+    grid-column: span var(--sc-xs, 1);
+  }
+
+  .grid > [style*="--sr-xs:"] {
+    grid-row: span var(--sr-xs, 1);
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .grid[style*="--col-sm:"] {
+    grid-template-columns: repeat(var(--col-sm, 1), 1fr);
+  }
+
+  .grid > [style*="--sc-sm:"] {
+    grid-column: span var(--sc-sm, 1);
+  }
+
+  .grid > [style*="--sr-sm:"] {
+    grid-row: span var(--sr-sm, 1);
+  }
+}
+
+@media only screen and (min-width:960px) {
+  .grid[style*="--col-md:"] {
+    grid-template-columns: repeat(var(--col-md, 1), 1fr);
+  }
+
+  .grid > [style*="--sc-md:"] {
+    grid-column: span var(--sc-md, 1);
+  }
+
+  .grid > [style*="--sr-md:"] {
+    grid-row: span var(--sr-md, 1);
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .grid[style*="--col-lg:"] {
+    grid-template-columns: repeat(var(--col-lg, 1), 1fr);
+  }
+
+  .grid > [style*="--sc-lg:"] {
+    grid-column: span var(--sc-lg, 1);
+  }
+
+  .grid > [style*="--sr-lg:"] {
+    grid-row: span var(--sr-lg, 1);
+  }
+}

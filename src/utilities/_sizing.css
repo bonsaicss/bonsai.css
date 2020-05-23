@@ -1,0 +1,7 @@
+/* Sizing */
+@mixin svar-mq width, --w;
+@mixin svar-mq height, --h;
+@mixin svar-mq min-width, --minw;
+@mixin svar-mq min-height, --minh;
+@mixin svar-mq max-width, --maxw;
+@mixin svar-mq max-height, --maxh;

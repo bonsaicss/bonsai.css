@@ -1,0 +1,61 @@
+/* Shadow Helpers */
+
+[style*="--levitate:"] {
+    box-shadow: 0 calc(var(--levitate) * .5px) calc(var(--levitate) * .6px) rgba(0,0,0,calc(var(--levitate) * .013)), 
+                0 calc(var(--levitate) * 1px) calc(var(--levitate) * 1.2px) rgba(0,0,0,calc(var(--levitate) * .013)), 
+                0 calc(var(--levitate) * 2px) calc(var(--levitate) * 2.4px) rgba(0,0,0,calc(var(--levitate) * .013)), 
+                0 calc(var(--levitate) * 4px) calc(var(--levitate) * 4.4px) rgba(0,0,0,calc(var(--levitate) * .013)); 
+    transform: translateY(calc(var(--levitate) * -1.2px));
+}
+
+[style*="--levitate-hvr:"] {
+    transition: all .4s ease;
+    &:hover,
+    &:focus {
+        box-shadow: 0 calc(var(--levitate-hvr) * .5px) calc(var(--levitate-hvr) * .6px) rgba(0,0,0,calc(var(--levitate-hvr) * .013)), 
+                    0 calc(var(--levitate-hvr) * 1px) calc(var(--levitate-hvr) * 1.2px) rgba(0,0,0,calc(var(--levitate-hvr) * .013)), 
+                    0 calc(var(--levitate-hvr) * 2px) calc(var(--levitate-hvr) * 2.4px) rgba(0,0,0,calc(var(--levitate-hvr) * .013)), 
+                    0 calc(var(--levitate-hvr) * 4px) calc(var(--levitate-hvr) * 4.4px) rgba(0,0,0,calc(var(--levitate-hvr) * .013)); 
+        transform: translateY(calc(var(--levitate-hvr) * -1.2px));
+    }
+}
+
+[style*="--shadow:"] {
+    box-shadow: 0 calc(var(--shadow) * .1px) calc(var(--shadow) * .2px) rgba(0,0,0,calc(var(--shadow) * .02)), 
+                0 calc(var(--shadow) * .2px) calc(var(--shadow) * .4px) rgba(0,0,0,calc(var(--shadow) * .02)), 
+                0 calc(var(--shadow) * .4px) calc(var(--shadow) * .8px) rgba(0,0,0,calc(var(--shadow) * .02)), 
+                0 calc(var(--shadow) * .8px) calc(var(--shadow) * 1.6px) rgba(0,0,0,calc(var(--shadow) * .02)); 
+}
+
+[style*="--shadow-soft:"] {
+    box-shadow: 0 calc(var(--shadow-soft) * .3px) calc(var(--shadow-soft) * 1.1px) rgba(0,0,0,.1), 
+                0 calc(var(--shadow-soft) * .6px) calc(var(--shadow-soft) * 1.2px) rgba(0,0,0,.1), 
+                0 calc(var(--shadow-soft) * 1.2px) calc(var(--shadow-soft) * 1.4px) rgba(0,0,0,.1), 
+                0 calc(var(--shadow-soft) * 2.4px) calc(var(--shadow-soft) * 1.6px) rgba(0,0,0,.1); 
+}
+
+[style*="--shadow-hard:"] {
+    box-shadow: 0 calc(var(--shadow-hard) * .75px) calc(var(--shadow-hard) * 1.3px) rgba(0,0,0,calc(var(--shadow-hard) * .12)); 
+}
+
+[style*="--shadow-vert:"] {
+    box-shadow: 0 calc(var(--shadow-vert) * 1.4px) calc(var(--shadow-vert) * 2px) calc(var(--shadow-vert) * -1.7px) rgba(0,0,0,calc(var(--shadow-vert) * .12)); 
+}
+
+[style*="--shadow-inset:"] {
+    box-shadow: inset 0 calc(var(--shadow-inset) * .1px) calc(var(--shadow-inset) * .2px) rgba(0,0,0,calc(var(--shadow-inset) * .02)), 
+                inset 0 calc(var(--shadow-inset) * .2px) calc(var(--shadow-inset) * .4px) rgba(0,0,0,calc(var(--shadow-inset) * .02)), 
+                inset 0 calc(var(--shadow-inset) * .4px) calc(var(--shadow-inset) * .8px) rgba(0,0,0,calc(var(--shadow-inset) * .02)), 
+                inset 0 calc(var(--shadow-inset) * .8px) calc(var(--shadow-inset) * 1.6px) rgba(0,0,0,calc(var(--shadow-inset) * .02)); 
+}
+
+[style*="--shadow-hvr:"] {
+    transition: all .4s ease;
+    &:hover,
+    &:focus {
+    box-shadow: 0 calc(var(--shadow-hvr) * .1px) calc(var(--shadow-hvr) * .2px) rgba(0,0,0,calc(var(--shadow-hvr) * .02)), 
+                0 calc(var(--shadow-hvr) * .2px) calc(var(--shadow-hvr) * .4px) rgba(0,0,0,calc(var(--shadow-hvr) * .02)), 
+                0 calc(var(--shadow-hvr) * .4px) calc(var(--shadow-hvr) * .8px) rgba(0,0,0,calc(var(--shadow-hvr) * .02)), 
+                0 calc(var(--shadow-hvr) * .8px) calc(var(--shadow-hvr) * 1.6px) rgba(0,0,0,calc(var(--shadow-hvr) * .02)); 
+    }
+}

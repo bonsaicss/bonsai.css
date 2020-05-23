@@ -1,0 +1,15 @@
+/* Background Helpers */
+
+[style*="--grad:"] {
+    background-image: linear-gradient(var(--grad), rgba(0,0,0,0), var(--grad-color, rgba(0,0,0,1)));
+}
+
+[style*="--grad-vars:"] {
+    background-image: linear-gradient(var(--grad-vars), var(--primary), var(--secondary));
+}
+
+[style*="--bg-pattern-squares:"] {
+    background-image: repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor),repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor);
+    background-position: 0 0,calc(var(--bg-pattern-squares) * 1px) calc(var(--bg-pattern-squares) * 1px);
+    background-size: calc(var(--bg-pattern-squares) * 2px) calc(var(--bg-pattern-squares) * 2px);
+}

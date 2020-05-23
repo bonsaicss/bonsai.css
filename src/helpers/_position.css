@@ -1,0 +1,40 @@
+/* Position Helpers */
+
+[style*="--inset:"] {
+    top: var(--inset);
+    left: var(--inset);
+    right: var(--inset);
+    bottom: var(--inset);
+}
+
+[style*="--inset-top:"] {
+    top: var(--inset-top);
+    left: var(--inset-top);
+    right: var(--inset-top);
+}
+
+[style*="--inset-bottom:"] {
+    left: var(--inset-bottom);
+    right: var(--inset-bottom);
+    bottom: var(--inset-bottom);
+}
+
+[style*="--inset-top-left:"] {
+    top: var(--inset-top-left);
+    left: var(--inset-top-left);
+}
+
+[style*="--inset-top-right:"] {
+    top: var(--inset-top-right);
+    right: var(--inset-top-right);
+}
+
+[style*="--inset-bottom-left:"] {
+    bottom: var(--inset-bottom-left);
+    left: var(--inset-bottom-left);
+}
+
+[style*="--inset-bottom-right:"] {
+    bottom: var(--inset-bottom-right);
+    right: var(--inset-bottom-right);
+}

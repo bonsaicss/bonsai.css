@@ -1,0 +1,14 @@
+/* Grid */
+@mixin svar-mq grid-template-columns, --gtc;
+@mixin svar-mq grid-template-rows, --gtr;
+@mixin svar-mq grid-auto-columns, --gac;
+@mixin svar-mq grid-auto-rows, --gar;
+@mixin svar-mq grid-column, --gc;
+@mixin svar-mq grid-row, --gr;
+@mixin svar-mq grid-gap, --gg;
+@mixin svar-mq place-self, --ps;
+
+
+[style*="--grid-cols:"] {
+    grid-template-columns: repeat(var(--grid-cols), minmax(0, 1fr));
+}

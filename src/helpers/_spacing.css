@@ -1,0 +1,21 @@
+/* Spacing Helpers */
+
+[style*="--px:"] {
+    padding-left: var(--px);
+    padding-right: var(--px);
+}
+
+[style*="--py:"] {
+    padding-top: var(--py);
+    padding-bottom: var(--py);
+}
+
+[style*="--mx:"] {
+    margin-left: var(--mx);
+    margin-right: var(--mx);
+}
+
+[style*="--my:"] {
+    margin-top: var(--my);
+    margin-bottom: var(--my);
+}  

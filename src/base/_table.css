@@ -1,0 +1,24 @@
+table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+td,
+th {
+  padding: .5rem;
+  text-align: left;
+}
+
+th {
+  background: rgba(100,100,100,.025);
+}
+
+thead {
+  border-bottom: 1px solid rgba(100,100,100,.2);
+}
+
+tr + tr,
+tfoot {
+  border-top: 1px solid rgba(100,100,100,.2);
+}

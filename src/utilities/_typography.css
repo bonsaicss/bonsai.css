@@ -1,0 +1,33 @@
+/* Typography */
+@mixin svar-mq color, --c;
+@mixin svar font-family, --ff;
+@mixin svar-mq font-size, --size;
+@mixin svar font-style, --fs;
+@mixin svar font-weight, --weight;
+@mixin svar-mq letter-spacing, --ls;
+@mixin svar-mq line-height, --lh;
+@mixin svar list-style, --lis;
+@mixin svar list-style-type, --list;
+@mixin svar list-style-position, --lisp;
+@mixin svar-mq text-align, --ta;
+@mixin svar text-decoration, --td;
+@mixin svar text-shadow, --ts;
+@mixin svar text-transform, --tt;
+@mixin svar-mq writing-mode, --wm;
+@mixin svar vertical-align, --va;
+
+@mixin svar-mq white-space, --ws;
+@mixin svar-mq word-break, --wb;
+
+@mixin svar-mq column-count, --cc;
+@mixin svar-mq column-gap, --cg;
+@mixin svar-mq column-rule, --cr;
+@mixin svar-mq column-span, --cs;
+
+@mixin svar-mq direction, --dir;
+
+[style*="--bi:"] {
+    -webkit-column-break-inside: var(--bi);
+    page-break-inside: var(--bi);
+    break-inside: var(--bi);
+}

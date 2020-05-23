@@ -1,0 +1,13 @@
+/* Spacing */
+@mixin svar box-sizing, --bxs;
+@mixin svar-mq padding, --p;
+@mixin svar-mq padding-left, --pl;
+@mixin svar-mq padding-right, --pr;
+@mixin svar-mq padding-top, --pt;
+@mixin svar-mq padding-bottom, --pb;
+@mixin svar-mq margin, --m;
+@mixin svar-mq margin-left, --ml;
+@mixin svar-mq margin-right, --mr;
+@mixin svar-mq margin-top, --mt;
+@mixin svar-mq margin-bottom, --mb;
+
