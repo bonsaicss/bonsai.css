@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ciar4n/bonsai.css"
+    "url": "https://github.com/bonsaicss/bonsai.css.git"
   },
   "keywords": [
     "css",
@@ -13,8 +13,8 @@
   ],
   "author": "ciar4n",
   "license": "MIT",
-  "bugs": "https://github.com/ciar4n/bonsai.css/issues",
-  "homepage": "https://github.com/ciar4n/bonsai.css",
+  "bugs": "https://github.com/bonsaicss/bonsai.css/issues",
+  "homepage": "https://github.com/bonsaicss/bonsai.css.git",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.3",
