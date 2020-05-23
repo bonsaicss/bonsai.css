@@ -1,7 +1,7 @@
 {
   "name": "bonsai.css",
-  "version": "0.0.1",
-  "description": "Largely classless, blazing fast and super light-weight. Bedrock, a base CSS framework for modern browsers",
+  "version": "1.0.0",
+  "description": "Largely classless, blazing fast and super light-weight. Bonsai, a base CSS framework for modern browsers",
   "main": "index.js",
   "repository": {
     "type": "git",
