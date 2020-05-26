@@ -70,7 +70,8 @@ blockquote cite {
 
 ul,
 ol {
-  padding: 0 0 0 2rem;
+  padding: 0;
+  padding-inline-start: 2rem;
 }
 
 ul {
@@ -92,5 +93,5 @@ address {
 mark {
   background-color: var(--highlight);
   border-radius: 2px;
-  padding: 0px 2px 0px 2px;
+  padding: 0 2px 0 2px;
 }

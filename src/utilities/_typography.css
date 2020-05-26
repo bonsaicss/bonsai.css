@@ -27,7 +27,6 @@
 @mixin svar-mq direction, --dir;
 
 [style*="--bi:"] {
-    -webkit-column-break-inside: var(--bi);
     page-break-inside: var(--bi);
     break-inside: var(--bi);
 }

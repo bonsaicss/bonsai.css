@@ -5,4 +5,4 @@
 
 ## Documentation
 
-For full documentation, visit [bonsaicss.netlify.app](https://bonsaicss.netlify.app/).
+For full documentation, visit [https://www.bonsaicss.com](https://www.bonsaicss.com).
