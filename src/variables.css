@@ -2,10 +2,10 @@
   --white: #fff;
   --grey: #e6e6e6;
   --black: #262626;
-  --green: #06847D;
+  --green: #06847d;
   --blue: #4a69bd;
-  --orange: #A46313;
-  --red: #E02E06;
+  --orange: #a46313;
+  --red: #e02e06;
   --primary: var(--blue);
   --secondary: var(--green);
   --background: #fff;
@@ -15,11 +15,11 @@
   --text-bright: #000;
   --text-muted: #707070;
   --links: var(--primary);
-  --focus: rgba(74, 105, 189, 0.35);
-  --border: rgba(0, 0, 0, 0.2);
+  --focus: rgba(74, 105, 189, .35);
+  --border: rgba(0, 0, 0, .2);
   --border-radius: 4px;
   --code: #000;
-  --animation-duration: 0.1s;
+  --animation-duration: .1s;
   --button-hover: #ddd;
   --form-placeholder: #949494;
   --form-text: #000;
@@ -35,5 +35,5 @@
   --typo-size-6: 1rem;
 
   --accent-border: 0;
-  --accent-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --accent-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
 }

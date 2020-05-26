@@ -1,21 +1,21 @@
 /* Spacing Helpers */
 
 [style*="--px:"] {
-    padding-left: var(--px);
-    padding-right: var(--px);
+    padding-inline-start: var(--px);
+    padding-inline-end: var(--px);
 }
 
 [style*="--py:"] {
-    padding-top: var(--py);
-    padding-bottom: var(--py);
+    padding-block-start: var(--py);
+    padding-block-end: var(--py);
 }
 
 [style*="--mx:"] {
-    margin-left: var(--mx);
-    margin-right: var(--mx);
+    margin-inline-start: var(--mx);
+    margin-inline-end: var(--mx);
 }
 
 [style*="--my:"] {
-    margin-top: var(--my);
-    margin-bottom: var(--my);
+    margin-block-start: var(--my);
+    margin-block-end: var(--my);
 }  

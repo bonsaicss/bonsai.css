@@ -3,15 +3,15 @@
   <head>
     <meta charset='utf-8'>
     <title>bonsai.css</title>
-    <link id='stylesheet' rel='stylesheet' href='dist/bonsai.min.css' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <link rel='manifest' href='icons/manifest.json' />
-    <link rel='shortcut icon' href='icons/favicon.ico' />
-    <meta name='apple-mobile-web-app-title' content='bonsai.css' />
-    <meta name='application-name' content='bonsai.css' />
-    <meta name='msapplication-config' content='icons/browserconfig.xml' />
-    <meta name='theme-color' content='#ffffff' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='apple-mobile-web-app-title' content='bonsai.css'>
+    <meta name='application-name' content='bonsai.css'>
+    <meta name='msapplication-config' content='icons/browserconfig.xml'>
+    <meta name='theme-color' content='#ffffff'>
     <meta name="description" content="Largely classless, blazing fast and super light-weight. Bonsai, a CSS framework for modern browsers.">
+    <link id='stylesheet' rel='stylesheet' href='dist/bonsai.min.css'>
+    <link rel='manifest' href='icons/manifest.json'>
+    <link rel='shortcut icon' href='icons/favicon.ico'>
 
     <style>
     section {
@@ -21,7 +21,7 @@
       grid-auto-rows: minmax(50px, auto);
     }
     .grid-demo > * {
-      background: #4a69bd;
+      background: var(--primary);
       min-height: 3rem;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
       border-radius: 4px;
@@ -35,22 +35,20 @@
       background: #3f5aa4;
     }
     </style>
-
   </head>
 
-  <body style="--maxw:1000px; --m:20px auto; --p:0 3vw; --bg:#f5f5f5; --c:#202020;">
-    <img src="logo.png" alt="bonsai" style="margin:40px auto 0; --d:block;">
-    <h1 style="text-align: center;">bonsai.css</h1>
-    <p style="text-align: center; max-width: 450px; margin: auto">All the versatility with none of the weight</p>
-    <br><br>
- 
+  <body style="--maxw:1000px; --m:20px auto; --p:0 3vw; --bg:#f5f5f5; --c:#202020">
+    <img src="logo.png" alt="bonsai" style="--m:40px auto 0; --d:block">
+    <h1 style="--ta:center">bonsai.css</h1>
+    <p style="--ta:center; --maxw:450px; --m:0 auto 3rem">All the versatility with none of the weight</p>
+
     <section>
       <h3 class="primary">Block and Inline Elements</h3>
       <p class="green">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
       </p>
       <p>
-        Sed egestas, ante et <a href="#">vulputate volutpat</a>, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. <i>Sed semper lorem at felis.</i> Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. <b>Phasellus pede</b> arcu, dapibus eu, fermentum et, dapibus sed, urna. Morbi interdum mollis sapien. Sed ac risus. <small>Phasellus lacinia, magna a ullamcorper laoreet</small>, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. <code>Suspendisse ac urna.</code> Etiam pellentesque mauris ut lectus. <mark>Nunc tellus ante</mark>, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
+        Sed egestas, ante et <a href="#">vulputate volutpat</a>, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. <em>Sed semper lorem at felis.</em> Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. <strong>Phasellus pede</strong> arcu, dapibus eu, fermentum et, dapibus sed, urna. Morbi interdum mollis sapien. Sed ac risus. <small>Phasellus lacinia, magna a ullamcorper laoreet</small>, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. <code>Suspendisse ac urna.</code> Etiam pellentesque mauris ut lectus. <mark>Nunc tellus ante</mark>, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
       </p>
       <blockquote>
         <p>
@@ -193,28 +191,28 @@
     <section>
       <h3 class="primary">Buttons</h3>
 
-      <p>
-        <span>Button with button tag</span><br>
+      <div>
+        <p style="--mb:0">Button with button tag</p>
         <button >Button</button>
         <button aria-label="add">
-          <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+          <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg>
           Button
         </button>
         <button disabled="">Button Disabled</button>
-      </p>
+      </div>
 
-      <p>
-        <span>Button Color Variations</span><br>
+      <div>
+        <p style="--mb:0">Button Color Variations</p>
         <button class="green">Green</button>
         <button class="orange">Orange</button>
         <button class="red">Red</button>
         <button class="white">White</button>
         <button class="grey">Grey</button>
         <button class="black">Black</button>
-      </p>
+      </div>
 
-      <p>
-        <span>Button Groups (Horizontal)</span><br>
+      <div>
+        <p style="--mb:0">Button Groups (Horizontal)</p>
           <span class="group">
             <button>Button</button>
             <button>Button</button>
@@ -231,7 +229,7 @@
           </span>
           <span class="group">
             <button aria-label="upload">
-              <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-download fa-w-18" style="transform-origin: 0.5625em 0.4375em 0px;"><g transform="translate(288 256)" class=""><g transform="translate(0, -32)  scale(1, 1)  rotate(0 0 0)" class=""><path fill="currentColor" d="M528 288h-92.1l46.1-46.1c30.1-30.1 8.8-81.9-33.9-81.9h-64V48c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v112h-64c-42.6 0-64.2 51.7-33.9 81.9l46.1 46.1H48c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V336c0-26.5-21.5-48-48-48zm-400-80h112V48h96v160h112L288 368 128 208zm400 256H48V336h140.1l65.9 65.9c18.8 18.8 49.1 18.7 67.9 0l65.9-65.9H528v128zm-88-64c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24z" transform="translate(-288 -256)" class=""></path></g></g></svg>
+              <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-download fa-w-18"><path fill="currentColor" d="M528 288h-92.1l46.1-46.1c30.1-30.1 8.8-81.9-33.9-81.9h-64V48c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v112h-64c-42.6 0-64.2 51.7-33.9 81.9l46.1 46.1H48c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V336c0-26.5-21.5-48-48-48zm-400-80h112V48h96v160h112L288 368 128 208zm400 256H48V336h140.1l65.9 65.9c18.8 18.8 49.1 18.7 67.9 0l65.9-65.9H528v128zm-88-64c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24-24-10.7-24-24z"/></svg>
             </button>
             <input type="text" placeholder="filename.txt" aria-label="Filename">
           </span>
@@ -239,10 +237,10 @@
             <input type="text" placeholder="Name" aria-label="Name">
             <button>Submit</button>
           </span>
-      </p>
+      </div>
 
-      <p>
-        <span>Button Groups (Vertical)</span><br>
+      <div>
+        <p style="--mb:0">Button Groups (Vertical)</p>
           <span class="group vertical">
             <button>Button</button>
             <button>Button</button>
@@ -267,23 +265,38 @@
 
     <section>
       <h3 class="primary">Radios &amp; Checkboxes</h3>
-      <p>
-        <input type="radio" name="radio" id="radio-1" checked="">
-        <label for="radio-1">Radio 1</label><br>
-        <input type="radio" name="radio" id="radio-2">
-        <label for="radio-2">Radio 2</label><br>
-        <input type="radio" name="radio" id="radio-3">
-        <label for="radio-3">Radio 3</label><br>
-        <input type="radio" name="radio" id="radio-4" disabled="">
-        <label for="radio-4">Radio 4 (disabled)</label>
-      </p>
-      <p>
-        <input type="checkbox" id="checkbox-1"> <label for="checkbox-1">Checkbox</label><br>
-        <input type="checkbox" id="checkbox-2" checked="">
-        <label for="checkbox-2">Checked Checkbox</label><br>
-        <input type="checkbox" id="checkbox-3" disabled="">
-        <label for="checkbox-3">Disabled Checkbox</label>
-      </p>
+      <div style="--mb:1rem">
+        <div>
+          <input type="radio" name="radio" id="radio-1" checked="">
+          <label for="radio-1">Radio 1</label>
+        </div>
+        <div>
+          <input type="radio" name="radio" id="radio-2">
+          <label for="radio-2">Radio 2</label>
+        </div>
+        <div>
+          <input type="radio" name="radio" id="radio-3">
+          <label for="radio-3">Radio 3</label>
+        </div>
+        <div>
+          <input type="radio" name="radio" id="radio-4" disabled="">
+          <label for="radio-4">Radio 4 (disabled)</label>
+        </div>
+      </div>
+      <div style="--mb:1rem">
+        <div>
+          <input type="checkbox" id="checkbox-1">
+          <label for="checkbox-1">Checkbox</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox-2" checked="">
+          <label for="checkbox-2">Checked Checkbox</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox-3" disabled="">
+          <label for="checkbox-3">Disabled Checkbox</label>
+        </div>
+      </div>
     </section>
 
     <section>
@@ -359,19 +372,19 @@
     <section>
       <h3 class="primary">Tags</h3>
 
-        <p>
-          <span>Tag Variations</span><br>
-          <div class="tag white">white</div>
-          <div class="tag green">green</div>
-          <div class="tag blue">blue</div>
-          <div class="tag orange">orange</div>
-          <div class="tag red">red</div>
-          <div class="tag grey">grey</div>
-          <div class="tag black">black</div>
-        </p>
+      <div>
+        <p style="--mb:0">Tag Variations</p>
+        <div class="tag white">white</div>
+        <div class="tag green">green</div>
+        <div class="tag blue">blue</div>
+        <div class="tag orange">orange</div>
+        <div class="tag red">red</div>
+        <div class="tag grey">grey</div>
+        <div class="tag black">black</div>
+      </div>
       
-      <p>
-        <span>Tag Groups (Horizontal)</span><br>
+      <div>
+        <p style="--mb:0">Tag Groups (Horizontal)</p>
         <span class="group">
           <span class="tag black">node.js</span>
           <span class="tag primary">12.16.1</span>
@@ -388,10 +401,10 @@
           <span class="tag black">node.js</span>
           <span class="tag orange">12.16.1</span>
         </span>
-      </p>
+      </div>
 
-      <p>
-        <span>Tag Groups (Vertical)</span><br>
+      <div>
+        <p style="--mb:0">Tag Groups (Vertical)</p>
         <span class="group vertical">
           <span class="tag black">node.js</span>
           <span class="tag primary">12.16.1</span>
@@ -408,12 +421,13 @@
           <span class="tag black">node.js</span>
           <span class="tag orange">12.16.1</span>
         </span>
-      </p>
+      </div>
     </section>
 
     <section class="section">
       <h3 class="primary">Table</h3>
       <table class="accent">
+        <caption>Table caption</caption>
         <thead>
           <tr>
             <th scope="row">Column 1</th>
@@ -493,5 +507,7 @@
         <dd>Definition for term 3.</dd>
       </dl>
     </section>
+
+    <a href="https://github.com/bonsaicss/bonsai.css" target="_blank" rel="noopener" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:var(--primary); color:var(--white); --pos: absolute; top: 0; border: 0; right: 0; height: auto;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor"/></svg></a>
   </body>
 </html>

@@ -27,7 +27,7 @@
 }
 
 .group.vertical > * + * {
-  margin-top: -1px;
+  margin-block-start: -1px;
 }
 
 .group.vertical > *:not(:last-child) {
