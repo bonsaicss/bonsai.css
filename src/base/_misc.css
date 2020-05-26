@@ -13,7 +13,7 @@ hr {
 }
 
 footer {
-  font-size: 0.8em;
+  font-size: .8em;
   color: var(--text-muted);
 }
 
@@ -21,7 +21,7 @@ svg {
   display: inline-block;
   font-size: inherit;
   height: 1.2em;
-  vertical-align: -0.2em;
+  vertical-align: -.2em;
   overflow: visible;
 }
 

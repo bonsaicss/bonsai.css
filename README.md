@@ -7,4 +7,4 @@
 
 ## Documentation
 
-For full documentation, visit [bonsaicss.com](https://www.bonsaicss.com/).
+For full documentation, visit [https://www.bonsaicss.com](https://www.bonsaicss.com).

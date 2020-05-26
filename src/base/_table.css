@@ -4,10 +4,16 @@ table {
   width: 100%;
 }
 
+caption {
+  padding: .5rem 0;
+  text-align: start;
+  caption-side: top;
+}
+
 td,
 th {
   padding: .5rem;
-  text-align: left;
+  text-align: start;
 }
 
 th {

@@ -30,7 +30,7 @@
                  1.5px 1.5px    var(--text-3d),
                  1.25px 1.25px  var(--text-3d),
                  1px 1px        var(--text-3d),
-                 0.75px 0.75px  var(--text-3d),
-                 0.5px 0.5px    var(--text-3d),
-                 0.25px 0.25px  var(--text-3d);
+                 .75px .75px    var(--text-3d),
+                 .5px .5px      var(--text-3d),
+                 .25px .25px    var(--text-3d);
 }
