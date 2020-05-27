@@ -2,7 +2,7 @@
   src="https://www.joomla51.com/images/bedrock.png" alt="Bonsai CSS Logo"
   width="149" height="206"></a>
 
-#bonsai.css
+# bonsai.css
 
 **A complete Utility First CSS Framework for less than 50kb**
 
