@@ -8,4 +8,5 @@
 @mixin svar-mq justify-content, --jc;
 @mixin svar-mq flex-grow, --fw;
 @mixin svar-mq flex-shrink, --fs;
+@mixin svar-mq flex-basis, --fb;
 @mixin svar-mq order, --o;
