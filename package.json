@@ -1,6 +1,6 @@
 {
   "name": "bonsai.css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Largely classless, blazing fast and super light-weight. Bonsai, a base CSS framework for modern browsers",
   "main": "dist/bansai.min.css",
   "repository": {
