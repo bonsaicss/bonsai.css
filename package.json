@@ -2,7 +2,7 @@
   "name": "bonsai.css",
   "version": "1.0.0",
   "description": "Largely classless, blazing fast and super light-weight. Bonsai, a base CSS framework for modern browsers",
-  "main": "bonsai.css",
+  "main": "dist/bansai.min.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/bonsaicss/bonsai.css.git"
