@@ -6,3 +6,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+// Reset the styling for placeholder links
+// e.g those without a href attribute
+a:not([href]):not([class]) {
+  &,
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
