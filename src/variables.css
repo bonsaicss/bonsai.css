@@ -21,6 +21,7 @@
   --code: #000;
   --animation-duration: .1s;
   --button-hover: #ddd;
+  --button-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
   --form-placeholder: #949494;
   --form-text: #000;
   --variable: #39a33c;
