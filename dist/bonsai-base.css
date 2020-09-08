@@ -332,7 +332,6 @@ fieldset > legend:first-of-type {
 }
 img {
   max-width: 100%;
-  height: auto;
 }
 hr {
   border: none;
