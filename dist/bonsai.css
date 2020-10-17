@@ -553,6 +553,14 @@ mark {
     --accent-c: var(--white);
     --text-c: var(--white);
   }
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 /* Background */
 [style*="--bg:"] {
     background: var(--bg) !important;
