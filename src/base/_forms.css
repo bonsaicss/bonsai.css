@@ -1,4 +1,5 @@
 button,
+.button,
 input,
 textarea {
   transition: background-color var(--animation-duration) linear,
@@ -8,6 +9,7 @@ textarea {
 }
 
 button,
+.button,
 select,
 input[type="submit"],
 input[type="button"],
@@ -29,6 +31,7 @@ button,
 textarea,
 select,
 details > summary,
+.button,
 .tag {
   color: var(--form-text);
   background-color: var(--background);
@@ -38,7 +41,7 @@ details > summary,
 
   position: relative;
   margin: .5rem .5rem .5rem 0;
-  padding: 10px 12px;
+  padding: 8px 12px;
   width: 100%;
   box-sizing: border-box;
 
@@ -72,19 +75,23 @@ select[multiple] {
 }
 
 button,
+.button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
+  display: inline-block;
   padding-right: 28px;
   padding-left: 28px;
   width: auto;
 
   background-color: var(--btn-bg, var(--primary));
+  line-height: inherit;
   color: var(--btn-c, var(--white));
   box-shadow: var(--button-shadow);
 }
 
 button:hover,
+.button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
   box-shadow: inset 0 0 2rem rgba(0, 0, 0, .25);
@@ -108,6 +115,7 @@ button:active {
 input:focus,
 select:focus,
 button:focus,
+.button:focus,
 textarea:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px var(--focus);
@@ -160,6 +168,7 @@ input[type="color"] {
 input:disabled,
 select:disabled,
 button:disabled,
+.button.disabled,
 textarea:disabled {
   cursor: not-allowed;
   opacity: .5;
