@@ -35,4 +35,15 @@
     $(prop): var($(var), var(--$(prop)));
   }
 }
-  
+
+@define-mixin svar:before $prop, $var {
+  [style*="$(var):"]::before {
+    $(prop): var($(var), var(--$(prop)));
+  }
+}
+
+@define-mixin svar:after $prop, $var {
+  [style*="$(var):"]::after {
+    $(prop): var($(var), var(--$(prop)));
+  }
+}
