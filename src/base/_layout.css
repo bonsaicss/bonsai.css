@@ -32,7 +32,7 @@
   }
 }
 
-@media only screen and (min-width:960px) {
+@media only screen and (min-width:768px) {
   .grid[style*="--col-md:"] {
     grid-template-columns: repeat(var(--col-md, 1), 1fr);
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@media only screen and (min-width:1280px) {
+@media only screen and (min-width: 1024px) {
   .grid[style*="--col-lg:"] {
     grid-template-columns: repeat(var(--col-lg, 1), 1fr);
   }
