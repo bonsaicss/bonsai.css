@@ -37,11 +37,11 @@ details > summary,
   background-color: var(--background);
 
   font-family: inherit;
-  font-size: inherit;
+  font-size: calc(var(--x, 100) * 1%);
 
   position: relative;
   margin: .5rem .5rem .5rem 0;
-  padding: 8px 12px;
+  padding: calc(var(--x, 100) * .08px) calc(var(--x, 100) * .12px);
   width: 100%;
   box-sizing: border-box;
 
@@ -80,8 +80,8 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"] {
   display: inline-block;
-  padding-right: 28px;
-  padding-left: 28px;
+  padding-right: calc(var(--x, 100) * .28px);
+  padding-left: calc(var(--x, 100) * .28px);
   width: auto;
 
   background-color: var(--btn-bg, var(--primary));
