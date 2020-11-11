@@ -4,9 +4,33 @@
 
 # bonsai.css
 
-**A complete Utility First CSS Framework for less than 45kb (8kB Gzipped)**
+**A complete Utility First CSS Framework for less than 45 KB (8 KB Gzipped)**
 
-Bonsai CSS is a super lightweight, fully responsive, utlity first framework. All you need to build beautifully crafted web interfaces with ease.
+Bonsai CSS is a super lightweight, fully responsive, utility first framework. All you need to build beautifully crafted web interfaces with ease.
+
+### Setup for development
+
+Install the dependencies with npm first:
+
+```bash
+npm i
+```
+
+### Building
+
+To build new Bonsai files (in the dist folder), run:
+
+```bash
+npm run build
+```
+
+### Developing
+
+To automatically build new versions of Bonsai during development, run:
+
+```
+npm run watch
+```
 
 ## Documentation
 
