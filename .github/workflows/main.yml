@@ -1,9 +1,9 @@
-name: Build source code
+name: Build dist files
 on: [push]
 
 jobs:
   run:
-    name: Built files
+    name: Build files
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
