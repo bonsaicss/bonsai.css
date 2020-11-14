@@ -554,7 +554,6 @@ mark {
   border: var(--accent-border, 0);
   border-radius: var(--border-radius, 0);
   box-shadow: var(--accent-shadow, none);
-  overflow: hidden;
 }
 .accent.primary,
   .accent.secondary,
