@@ -13,6 +13,8 @@
 @mixin svar-mq border-top-right-radius, --btrr;
 @mixin svar-mq border-bottom-left-radius, --bblr;
 @mixin svar-mq border-bottom-right-radius, --bbrr;
+@mixin svar border-inline-start, --bis;
+@mixin svar border-inline-end, --bie;
 
 @mixin svar:hover border, --hvr-b;
 @mixin svar:hover border-color, --hvr-bc;
