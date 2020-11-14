@@ -303,6 +303,22 @@
 [style*="--mb:"] {
     margin-bottom: var(--mb) !important;
   }
+[style*="--pis:"] {
+    -webkit-padding-start: var(--pis) !important;
+            padding-inline-start: var(--pis) !important;
+  }
+[style*="--pie:"] {
+    -webkit-padding-end: var(--pie) !important;
+            padding-inline-end: var(--pie) !important;
+  }
+[style*="--mis:"] {
+    -webkit-margin-start: var(--mis) !important;
+            margin-inline-start: var(--mis) !important;
+  }
+[style*="--mie:"] {
+    -webkit-margin-end: var(--mie) !important;
+            margin-inline-end: var(--mie) !important;
+  }
 /* Typography */
 [style*="--c:"] {
     color: var(--c) !important;
