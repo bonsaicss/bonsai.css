@@ -535,6 +535,19 @@ mark {
   --tag-bg: var(--black);
   --accent-bg: var(--black);
 }
+.transparent {
+  --text-c: transparent;
+  --btn-bg: transparent;
+  --btn-c: var(--text-main);
+  --tag-bg: transparent;
+  --tag-c: var(--text-main);
+  --accent-bg: transparent;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+.transparent:hover {
+  border: 1px solid var(--border);
+}
 .accent {
   color: var(--accent-c, var(--text-main));
   background-color: var(--accent-bg, var(--white));
@@ -636,14 +649,6 @@ mark {
   }
 [style*="--bbrr:"] {
     border-bottom-right-radius: var(--bbrr) !important;
-  }
-[style*="--bis:"] {
-    -webkit-border-start: var(--bis) !important;
-            border-inline-start: var(--bis) !important;
-  }
-[style*="--bie:"] {
-    -webkit-border-end: var(--bie) !important;
-            border-inline-end: var(--bie) !important;
   }
 [style*="--hvr-b:"]:hover {
     border: var(--hvr-b, var(--border));
