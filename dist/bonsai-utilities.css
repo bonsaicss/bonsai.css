@@ -115,6 +115,14 @@
 [style*="--bbrr:"] {
     border-bottom-right-radius: var(--bbrr) !important;
   }
+[style*="--bis:"] {
+    -webkit-border-start: var(--bis) !important;
+            border-inline-start: var(--bis) !important;
+  }
+[style*="--bie:"] {
+    -webkit-border-end: var(--bie) !important;
+            border-inline-end: var(--bie) !important;
+  }
 [style*="--hvr-b:"]:hover {
     border: var(--hvr-b, var(--border));
   }
