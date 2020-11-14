@@ -11,3 +11,8 @@
 @mixin svar-mq margin-top, --mt;
 @mixin svar-mq margin-bottom, --mb;
 
+@mixin svar padding-inline-start, --pis;
+@mixin svar padding-inline-end, --pie;
+@mixin svar margin-inline-start, --mis;
+@mixin svar margin-inline-end, --mie;
+
