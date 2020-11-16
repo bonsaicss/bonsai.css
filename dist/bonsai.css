@@ -225,8 +225,7 @@ input[type="radio"] {
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  background: var(--primary);
-
+  background: var(--accent-bg, var(--primary));
 }
 input[type="checkbox"]:checked::before {
   display: flex;
