@@ -9,7 +9,7 @@
 }
 
 [style*="--levitate-hvr:"] {
-    transition: all .4s ease;
+    transition: --transition;
     &:hover,
     &:focus {
         box-shadow: 0 calc(var(--levitate-hvr) * .5px) calc(var(--levitate-hvr) * .6px) rgba(0,0,0,calc(var(--levitate-hvr) * .013)), 
@@ -50,7 +50,7 @@
 }
 
 [style*="--shadow-hvr:"] {
-    transition: all .4s ease;
+    transition: --transition;
     &:hover,
     &:focus {
     box-shadow: 0 calc(var(--shadow-hvr) * .1px) calc(var(--shadow-hvr) * .2px) rgba(0,0,0,calc(var(--shadow-hvr) * .02)), 
