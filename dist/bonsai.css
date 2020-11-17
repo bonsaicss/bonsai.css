@@ -147,6 +147,22 @@ details > summary,
 
           appearance: none;
 }
+details {
+  margin: 0.5rem 0;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+details > summary {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+details > *:last-child {
+  padding-bottom: 10px;
+}
 textarea {
   margin-right: 0;
   width: 100%;

@@ -1,5 +1,8 @@
 name: Build dist files
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   run:
