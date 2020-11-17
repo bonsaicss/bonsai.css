@@ -163,6 +163,14 @@
     -webkit-margin-after: var(--my);
             margin-block-end: var(--my);
 }
+/* Translate Helpers */
+[style*="--tt:"],
+[style*="--ttx:"],
+[style*="--tty:"],
+[style*="--ts:"],
+[style*="--tr:"] {
+  transform: translate(var(--tt, 0)) translateX(var(--ttx, 0)) translateY(var(--tty, 0)) scale(var(--ts, 100%)) rotate(var(--tr, 0));
+}
 /* Typography Helpers */
 [style*="--line-clamp:"] {
     display: -webkit-box;
