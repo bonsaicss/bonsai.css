@@ -5,9 +5,7 @@
 [style*="--translatey:"],
 [style*="--scale:"],
 [style*="--rotate:"],
-[style*="--skew:"],
-[style*="--perspective:"] {
-  perspective: var(--perspective, none);
+[style*="--skew:"] {
   transform: 
     translate(var(--translate, 0)) 
     translateX(var(--translatex, 0)) 
@@ -22,10 +20,8 @@
 [style*="--translatey-hvr:"],
 [style*="--scale-hvr:"],
 [style*="--rotate-hvr:"],
-[style*="--skew-hvr:"],
-[style*="--perspective-hvr:"] {
+[style*="--skew-hvr:"] {
   transition: var(--transition);
-  perspective: var(--perspective-hvr, none);
 
   &:hover {
     transform: 
