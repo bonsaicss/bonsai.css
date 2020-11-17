@@ -178,6 +178,21 @@ input[type="range"] {
   padding: 0;
 }
 
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--primary);
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+
+input[type=range]::-moz-range-thumb {
+  background: var(--primary);
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+
 input[type="color"] {
   padding: 2px;
   width: 5rem;
