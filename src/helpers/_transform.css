@@ -1,10 +1,40 @@
-/* Translate Helpers */
+/* Transform Helpers */
 
-[style*="--tt:"],
-[style*="--ttx:"],
-[style*="--tty:"],
-[style*="--ts:"],
-[style*="--tr:"] {
-  transform: translate(var(--tt, 0)) translateX(var(--ttx, 0)) translateY(var(--tty, 0)) scale(var(--ts, 100%)) rotate(var(--tr, 0));
+[style*="--translate:"],
+[style*="--translatex:"],
+[style*="--translatey:"],
+[style*="--scale:"],
+[style*="--rotate:"],
+[style*="--skew:"],
+[style*="--perspective:"] {
+  perspective: var(--perspective, none);
+  transform: 
+    translate(var(--translate, 0)) 
+    translateX(var(--translatex, 0)) 
+    translateY(var(--translatey, 0)) 
+    scale(var(--scale, 100%)) 
+    rotate(var(--rotate, 0)) 
+    skew(var(--skew, 0));
+}
+
+[style*="--translate-hvr:"],
+[style*="--translatex-hvr:"],
+[style*="--translatey-hvr:"],
+[style*="--scale-hvr:"],
+[style*="--rotate-hvr:"],
+[style*="--skew-hvr:"],
+[style*="--perspective-hvr:"] {
+  transition: var(--transition);
+  perspective: var(--perspective-hvr, none);
+
+  &:hover {
+    transform: 
+      translate(var(--translate-hvr, 0)) 
+      translateX(var(--translatex-hvr, 0)) 
+      translateY(var(--translatey-hvr, 0))
+      scale(var(--scale-hvr, 100%)) 
+      rotate(var(--rotate-hvr, 0))
+      skew(var(--skew-hvr, 0));
+  }
 }
 
