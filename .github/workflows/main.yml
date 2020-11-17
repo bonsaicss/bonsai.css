@@ -6,7 +6,6 @@ on:
 
 jobs:
   run:
-    if: github.event.pull_request.merged == 'true'
     name: Build files
     runs-on: ubuntu-latest
     steps:
