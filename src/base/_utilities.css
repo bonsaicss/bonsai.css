@@ -1,77 +1,57 @@
 .primary {
   --text-c: var(--primary);
-  --btn-bg: var(--primary);
-  --tag-bg: var(--primary);
-  --accent-bg: var(--primary);
+  --element-bg: var(--primary);
 }
 
 .secondary {
   --text-c: var(--secondary);
-  --btn-bg: var(--secondary);
-  --tag-bg: var(--secondary);
-  --accent-bg: var(--secondary);
+  --element-bg: var(--secondary);
 }
 
 .green {
   --text-c: var(--green);
-  --btn-bg: var(--green);
-  --tag-bg: var(--green);
-  --accent-bg: var(--green);
+  --element-bg: var(--green);
 }
 
 .blue {
   --text-c: var(--blue);
-  --btn-bg: var(--blue);
-  --tag-bg: var(--blue);
-  --accent-bg: var(--blue);
+  --element-bg: var(--blue);
 }
 
 .orange {
   --text-c: var(--orange);
-  --btn-bg: var(--orange);
-  --tag-bg: var(--orange);
-  --accent-bg: var(--orange);
+  --element-bg: var(--orange);
 }
 
 .red {
   --text-c: var(--red);
-  --btn-bg: var(--red);
-  --tag-bg: var(--red);
-  --accent-bg: var(--red);
+  --element-bg: var(--red);
 }
 
 .white {
   --text-c: var(--white);
-  --btn-bg: var(--white);
+  --element-bg: var(--white);
   --btn-c: var(--text-main);
-  --tag-bg: var(--white);
   --tag-c: var(--text-main);
-  --accent-bg: var(--white);
 }
 
 .grey {
   --text-c: var(--grey);
-  --btn-bg: var(--grey);
+  --element-bg: var(--grey);
   --btn-c: var(--text-main);
-  --tag-bg: var(--grey);
   --tag-c: var(--text-main);
-  --accent-bg: var(--grey);
 }
 
 .black {
   --text-c: var(--black);
-  --btn-bg: var(--black);
-  --tag-bg: var(--black);
-  --accent-bg: var(--black);
+  --element-bg: var(--black);
 }
 
 .transparent {
   --text-c: transparent;
-  --btn-bg: transparent;
+  --element-bg: transparent;
   --btn-c: var(--text-main);
-  --tag-bg: transparent;
   --tag-c: var(--text-main);
-  --accent-bg: transparent;
   border: 1px solid transparent;
   box-shadow: none;
 }
@@ -82,7 +62,7 @@
 
 .accent {
   color: var(--accent-c, var(--text-main));
-  background-color: var(--accent-bg, var(--white));
+  background-color: var(--element-bg, var(--white));
   border: var(--accent-border, 0);
   border-radius: var(--border-radius, 0);
   box-shadow: var(--accent-shadow, none);
