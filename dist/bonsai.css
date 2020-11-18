@@ -1123,6 +1123,38 @@ mark {
     -webkit-margin-after: var(--my);
             margin-block-end: var(--my);
 }
+/* Transform Helpers */
+[style*="--translate:"],
+[style*="--translatex:"],
+[style*="--translatey:"],
+[style*="--scale:"],
+[style*="--rotate:"],
+[style*="--skew:"] {
+  transform: 
+    translate(var(--translate, 0)) 
+    translateX(var(--translatex, 0)) 
+    translateY(var(--translatey, 0)) 
+    scale(var(--scale, 100%)) 
+    rotate(var(--rotate, 0)) 
+    skew(var(--skew, 0));
+}
+[style*="--translate-hvr:"],
+[style*="--translatex-hvr:"],
+[style*="--translatey-hvr:"],
+[style*="--scale-hvr:"],
+[style*="--rotate-hvr:"],
+[style*="--skew-hvr:"] {
+  transition: var(--transition);
+}
+[style*="--translate-hvr:"]:hover, [style*="--translatex-hvr:"]:hover, [style*="--translatey-hvr:"]:hover, [style*="--scale-hvr:"]:hover, [style*="--rotate-hvr:"]:hover, [style*="--skew-hvr:"]:hover {
+    transform: 
+      translate(var(--translate-hvr, 0)) 
+      translateX(var(--translatex-hvr, 0)) 
+      translateY(var(--translatey-hvr, 0))
+      scale(var(--scale-hvr, 100%)) 
+      rotate(var(--rotate-hvr, 0))
+      skew(var(--skew-hvr, 0));
+  }
 /* Typography Helpers */
 [style*="--line-clamp:"] {
     display: -webkit-box;
