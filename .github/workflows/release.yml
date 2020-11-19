@@ -20,6 +20,10 @@ jobs:
       - name: Run Build
         run: npm run build
 
+      - name: Get latest release version number
+        id: get_version
+        uses: battila7/get-version-action@v2
+
       - name: Zip files
         run: zip -jr bonsai-dist.zip dist/*
 
@@ -28,6 +32,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: bonsai-dist.zip
-          asset_name: bonsai-${{ github.event.release.tag_name }}-dist.zip
+          asset_name: bonsai-${{ steps.get_version.outputs.version }}-dist.zip
           tag: ${{ github.ref }}
           overwrite: true
