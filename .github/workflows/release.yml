@@ -3,11 +3,9 @@ on:
     tags:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
-name: Create Release
-
 jobs:
   build:
-    name: Create Release
+    name: Add release dist files to tag
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -30,6 +28,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: bonsai-dist.zip
-          asset_name: bonsai-${{ github.ref }}-dist.zip
+          asset_name: bonsai-${{ github.event.release.tag_name }}-dist.zip
           tag: ${{ github.ref }}
           overwrite: true
