@@ -325,7 +325,7 @@ fieldset > legend:first-of-type {
   width: auto;
   height: calc(var(--x, 100) * 0.02em);
   justify-content: center;
-  padding: 0 calc(var(--x, 100) * .0075em) calc(var(--x, 100) * .02px);
+  padding: 2px .75em;
 
   border: 0;
   box-shadow: none;
