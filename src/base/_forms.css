@@ -103,7 +103,7 @@ input[type="reset"] {
   padding-left: calc(var(--x, 100) * .28px);
   width: auto;
 
-  background-color: var(--btn-bg, var(--primary));
+  background-color: var(--element-bg, var(--primary));
   line-height: inherit;
   color: var(--btn-c, var(--white));
   box-shadow: var(--button-shadow);
@@ -237,7 +237,7 @@ fieldset > legend:first-of-type {
 
   font-size: .8rem;
   color: var(--tag-c, var(--white));
-  background-color: var(--tag-bg, var(--primary));
+  background-color: var(--element-bg, var(--primary));
 
   width: auto;
   height: 2em;
