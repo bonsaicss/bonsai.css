@@ -318,14 +318,14 @@ fieldset > legend:first-of-type {
   align-items: center;
   display: inline-flex;
 
-  font-size: .8rem;
+  font-size: calc(var(--x, 100) * .008rem);
   color: var(--tag-c, var(--white));
   background-color: var(--element-bg, var(--primary));
 
   width: auto;
-  height: 2em;
+  height: calc(var(--x, 100) * 0.02em);
   justify-content: center;
-  padding: 0 .75em 2px;
+  padding: 0 calc(var(--x, 100) * .0075em) calc(var(--x, 100) * .02px);
 
   border: 0;
   box-shadow: none;
