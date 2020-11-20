@@ -140,6 +140,18 @@ textarea:focus {
   box-shadow: 0 0 0 3px var(--focus);
 }
 
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: var(--green);
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: var(--red);
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   position: relative;
