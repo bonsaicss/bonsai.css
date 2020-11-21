@@ -35,6 +35,8 @@
   --typo-size-5: 1.2rem;
   --typo-size-6: 1rem;
 
+  --wrapper: 1280px;
+
   --transition: all ease .4s;
 
   --accent-border: 0;
@@ -51,6 +53,15 @@
     background-image: repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor),repeating-linear-gradient(45deg, currentColor 25%, transparent 25%, transparent 75%, currentColor 75%, currentColor);
     background-position: 0 0,calc(var(--bg-pattern-squares) * 1px) calc(var(--bg-pattern-squares) * 1px);
     background-size: calc(var(--bg-pattern-squares) * 2px) calc(var(--bg-pattern-squares) * 2px);
+}
+/* Layout Helpers */
+.wrapper,
+[style*="--wrapper:"] {
+  max-width: var(--wrapper);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 /* Position Helpers */
 [style*="--inset:"] {
@@ -228,6 +239,30 @@
                  .75px .75px    var(--text-3d),
                  .5px .5px      var(--text-3d),
                  .25px .25px    var(--text-3d);
+}
+@media only screen and (min-width:640px) {
+.wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-sm)
+}
+}
+@media only screen and (min-width:768px) {
+.wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-md)
+}
+}
+@media only screen and (min-width:1024px) {
+.wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-lg)
+}
+}
+@media only screen and (min-width:1280px) {
+.wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-xl)
+}
 }
 
 /*# sourceMappingURL=bonsai-helpers.css.map */
