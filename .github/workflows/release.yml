@@ -1,0 +1,37 @@
+on:
+  push:
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+jobs:
+  build:
+    name: Add release dist files to tag
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Build
+        run: npm run build
+
+      - name: Get latest release version number
+        id: get_version
+        uses: battila7/get-version-action@v2
+
+      - name: Zip files
+        run: zip -jr bonsai-dist.zip dist/*
+
+      - name: Upload zip to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: bonsai-dist.zip
+          asset_name: bonsai-${{ steps.get_version.outputs.version }}-dist.zip
+          tag: ${{ github.ref }}
+          overwrite: true
