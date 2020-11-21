@@ -35,6 +35,8 @@
   --typo-size-5: 1.2rem;
   --typo-size-6: 1rem;
 
+  --wrapper: 1280px;
+
   --transition: all ease .4s;
 
   --accent-border: 0;
