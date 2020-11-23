@@ -240,9 +240,8 @@ fieldset > legend:first-of-type {
   background-color: var(--element-bg, var(--primary));
 
   width: auto;
-  height: calc(var(--x, 100) * 0.02em);
   justify-content: center;
-  padding: 2px .75em;
+  padding: calc(var(--x, 100) .02px) calc(var(--x, 100) .0075em);
 
   border: 0;
   box-shadow: none;
