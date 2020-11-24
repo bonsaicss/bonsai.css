@@ -7,7 +7,8 @@
 @mixin svar-mq grid-row, --gr;
 @mixin svar-mq grid-gap, --gg;
 @mixin svar-mq place-self, --ps;
-
+@mixin svar-mq justify-items, --ji;
+@mixin svar-mq justify-self, --js;
 
 [style*="--grid-cols:"] {
     grid-template-columns: repeat(var(--grid-cols), minmax(0, 1fr));
