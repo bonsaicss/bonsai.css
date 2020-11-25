@@ -105,7 +105,7 @@
     transform: translateY(calc(var(--levitate) * -1.2px));
 }
 [style*="--levitate-hvr:"] {
-    transition: --transition;
+    transition: var(--transition);
 }
 [style*="--levitate-hvr:"]:hover,
     [style*="--levitate-hvr:"]:focus {
@@ -140,7 +140,7 @@
                 inset 0 calc(var(--shadow-inset) * .8px) calc(var(--shadow-inset) * 1.6px) rgba(0,0,0,calc(var(--shadow-inset) * .02)); 
 }
 [style*="--shadow-hvr:"] {
-    transition: --transition;
+    transition: var(--transition);
 }
 [style*="--shadow-hvr:"]:hover,
     [style*="--shadow-hvr:"]:focus {
