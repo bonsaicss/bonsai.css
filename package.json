@@ -1,6 +1,6 @@
 {
   "name": "bonsai.css",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Largely classless, blazing fast and super light-weight. Bonsai, a base CSS framework for modern browsers",
   "main": "dist/bonsai.min.css",
   "scripts": {
