@@ -59,7 +59,7 @@ details > summary,
   border: 2px solid var(--element-bg);
 }
 
-.outline:hover {
+.outline:hover, .outline:focus, .outline:active {
   box-shadow: none;
   color: var(--btn-c, var(--white));
   background-color: var(--element-bg, var(--primary));
