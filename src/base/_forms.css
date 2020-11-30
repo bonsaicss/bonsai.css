@@ -52,6 +52,19 @@ details > summary,
   appearance: none;
 }
 
+.outline {
+  background: transparent;
+  box-shadow: none;
+  color: var(--form-text);
+  border: 2px solid var(--element-bg);
+}
+
+.outline:hover, .outline:focus, .outline:active {
+  box-shadow: none;
+  color: var(--btn-c, var(--white));
+  background-color: var(--element-bg, var(--primary));
+}
+
 details {
   margin: 0.5rem 0;
   background-color: var(--background);
