@@ -1,5 +1,6 @@
 /* Misc */
 @mixin svar all, --all;
+@mixin svar-mq box-shadow, --boxs;
 @mixin svar-mq content, --ct;
 @mixin svar-mq opacity, --op;
 @mixin svar-mq box-shadow, --bs;
