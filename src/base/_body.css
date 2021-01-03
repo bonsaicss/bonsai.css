@@ -11,7 +11,7 @@ html {
   font-weight: 400;
 
   color: var(--text-main);
-  background: var(--background-body);
+  background: var(--background);
 
   text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
