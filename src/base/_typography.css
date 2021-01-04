@@ -52,10 +52,9 @@ th {
 }
 
 blockquote {
-  border-left: 4px solid var(--primary);
-  background-color: #fff;
+  border-left: 4px solid var(--color, --primary);
   margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
+  padding: calc(var(--x, 100) * .0075rem) calc(var(--x, 100) * .015rem);
   font-style: italic;
 }
 
