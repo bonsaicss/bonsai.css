@@ -52,14 +52,14 @@ th {
 }
 
 blockquote {
-  border-left: 4px solid var(--primary);
-  background-color: #fff;
+  border-left: calc(var(--x, 100) * .04px) solid var(--color, var(--primary));
+  background: var(--blockquote-bg, #fff);
   margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
+  padding: calc(var(--x, 100) * .0075rem) calc(var(--x, 100) * .015rem);
   font-style: italic;
 }
 
-blockquote > footer {
+blockquote footer {
   font-style: normal;
   border: 0;
 }
