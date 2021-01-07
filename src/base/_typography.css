@@ -59,7 +59,7 @@ blockquote {
   font-style: italic;
 }
 
-blockquote > footer {
+blockquote footer {
   font-style: normal;
   border: 0;
 }
