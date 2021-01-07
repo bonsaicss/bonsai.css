@@ -490,7 +490,7 @@ blockquote {
   padding: calc(var(--x, 100) * .0075rem) calc(var(--x, 100) * .015rem);
   font-style: italic;
 }
-blockquote > footer {
+blockquote footer {
   font-style: normal;
   border: 0;
 }
