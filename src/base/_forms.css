@@ -26,7 +26,7 @@ select {
   display: block;
 }
 
-input,
+input:not([type="image"]),
 button,
 textarea,
 select,
