@@ -152,7 +152,7 @@ details > summary,
 .outline {
   background: transparent;
   box-shadow: none;
-  color: var(--form-text);
+  color: var(--element-bg);
   border: 2px solid var(--element-bg);
 }
 .outline:hover, .outline:focus, .outline:active {
