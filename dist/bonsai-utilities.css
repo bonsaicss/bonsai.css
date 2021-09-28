@@ -390,6 +390,9 @@
 [style*="--dir:"] {
     direction: var(--dir) !important;
   }
+[style*="--hvr-c:"]:hover {
+    color: var(--hvr-c, var(--color));
+  }
 [style*="--bi:"] {
     page-break-inside: var(--bi);
     -moz-column-break-inside: var(--bi);
