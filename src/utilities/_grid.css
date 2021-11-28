@@ -1,14 +1,14 @@
 /* Grid */
-@mixin svar-mq grid-template-columns, --gtc;
-@mixin svar-mq grid-template-rows, --gtr;
-@mixin svar-mq grid-auto-columns, --gac;
-@mixin svar-mq grid-auto-rows, --gar;
-@mixin svar-mq grid-column, --gc;
-@mixin svar-mq grid-row, --gr;
-@mixin svar-mq grid-gap, --gg;
-@mixin svar-mq place-self, --ps;
-@mixin svar-mq justify-items, --ji;
-@mixin svar-mq justify-self, --js;
+@mixin svar-mq grid-template-columns, --grid-template-columns;
+@mixin svar-mq grid-template-rows, --grid-template-rows;
+@mixin svar-mq grid-auto-columns, --grid-auto-columns;
+@mixin svar-mq grid-auto-rows, --grid-auto-rows;
+@mixin svar-mq grid-column, --grid-column;
+@mixin svar-mq grid-row, --grid-row;
+@mixin svar-mq grid-gap, --grid-gap;
+@mixin svar-mq place-self, --place-self;
+@mixin svar-mq justify-items, --justify-items;
+@mixin svar-mq justify-self, --justify-self;
 
 [style*="--grid-cols:"] {
     grid-template-columns: repeat(var(--grid-cols), minmax(0, 1fr));

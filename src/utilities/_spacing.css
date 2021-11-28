@@ -1,13 +1,11 @@
 /* Spacing */
-@mixin svar box-sizing, --bxs;
-@mixin svar-mq padding, --p;
-@mixin svar-mq padding-left, --pl;
-@mixin svar-mq padding-right, --pr;
-@mixin svar-mq padding-top, --pt;
-@mixin svar-mq padding-bottom, --pb;
-@mixin svar-mq margin, --m;
-@mixin svar-mq margin-left, --ml;
-@mixin svar-mq margin-right, --mr;
-@mixin svar-mq margin-top, --mt;
-@mixin svar-mq margin-bottom, --mb;
-
+@mixin svar-mq padding, --padding;
+@mixin svar-mq padding-left, --padding-left;
+@mixin svar-mq padding-right, --padding-right;
+@mixin svar-mq padding-top, --padding-top;
+@mixin svar-mq padding-bottom, --padding-bottom;
+@mixin svar-mq margin, --margin;
+@mixin svar-mq margin-left, --margin-left;
+@mixin svar-mq margin-right, --margin-right;
+@mixin svar-mq margin-top, --margin-top;
+@mixin svar-mq margin-bottom, --margin-bottom;
