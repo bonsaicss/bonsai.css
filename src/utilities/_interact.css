@@ -1,7 +1,2 @@
 /* Interact */
-@mixin svar user-select, --us;
-@mixin svar outline, --oe;
-@mixin svar pointer-events, --pe;
-@mixin svar scroll-behavior, --sb;
-@mixin svar cursor, --cur;
-@mixin svar:hover cursor, --cur;
+@mixin svar:hover cursor, --hvr-cursor;

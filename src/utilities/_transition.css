@@ -1,6 +1,6 @@
 /* Animation */
-@mixin svar-mq transition, --tn;
-@mixin svar-mq transition-delay, --td;
-@mixin svar-mq transition-duration, --tdn;
-@mixin svar-mq transition-property, --tp;
-@mixin svar-mq transition-timing-function, -ttf;
+@mixin svar-mq transition, --transition;
+@mixin svar-mq transition-delay, --transition-delay;
+@mixin svar-mq transition-duration, --transition-duration;
+@mixin svar-mq transition-property, --transition-property;
+@mixin svar-mq transition-timing-function, -transition-timing-function;

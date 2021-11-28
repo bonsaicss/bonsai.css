@@ -1,14 +1,14 @@
 /* Background */
-@mixin svar-mq background, --bg;
-@mixin svar-mq background-attachment, --bga;
-@mixin svar-mq background-color, --bgc;
-@mixin svar-mq background-image, --bgi;
-@mixin svar-mq background-position, --bgp;
-@mixin svar-mq background-repeat, --bgr;
-@mixin svar-mq background-size, --bgs;
+@mixin svar-mq background, --background;
+@mixin svar-mq background-attachment, --background-attachment;
+@mixin svar-mq background-color, --background-color;
+@mixin svar-mq background-image, --background-image;
+@mixin svar-mq background-position, --background-position;
+@mixin svar-mq background-repeat, --background-repeat;
+@mixin svar-mq background-size, --background-size;
 
-@mixin svar:hover background, --hvr-bg;
-@mixin svar:hover background-color, --hvr-bgc;
+@mixin svar:hover background, --hvr-background;
+@mixin svar:hover background-color, --hvr-background-color;
 
 [style*="--grad-top:"] {
     background-image: linear-gradient(0deg, transparent, var(--grad-bottom));

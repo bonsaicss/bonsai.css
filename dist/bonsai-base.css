@@ -60,8 +60,6 @@ html {
 
      -moz-text-size-adjust: 100%;
 
-      -ms-text-size-adjust: 100%;
-
           text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
@@ -295,16 +293,10 @@ textarea:disabled {
   cursor: not-allowed;
   opacity: .5;
 }
-::-webkit-input-placeholder {
-  color: var(--form-placeholder);
-}
 ::-moz-placeholder {
   color: var(--form-placeholder);
 }
 :-ms-input-placeholder {
-  color: var(--form-placeholder);
-}
-::-ms-input-placeholder {
   color: var(--form-placeholder);
 }
 ::placeholder {

@@ -1,4 +1,4 @@
 /* Transform */
-@mixin svar-mq transform, --t;
-@mixin svar-mq transform-origin, --to;
-@mixin svar-mq transform-style, --tc;
+@mixin svar-mq transform, --transform;
+@mixin svar-mq transform-origin, --transform-origin;
+@mixin svar-mq transform-style, --transform-style;
